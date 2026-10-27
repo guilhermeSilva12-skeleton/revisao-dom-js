@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#caixa {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e2e8f0;
+    margin: 5px auto;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}

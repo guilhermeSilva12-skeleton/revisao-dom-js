@@ -41,3 +41,18 @@ let imagem = document.getElementById("imagem");
 imagem.addEventListener("click", function(){
     imagem.src = "imagem.jpg";
 })
+const NightMode = document.createElement("button");
+NightMode.textContent = "Modo Noturno";
+NightMode.style.width = "8rem"; 
+NightMode.style.height = "5rem";
+NightMode.style.borderRadius = "5px"; 
+NightMode.style.backgroundColor = "gray";
+NightMode.style.color = "white";
+NightMode.style.cursor = "pointer";
+NightMode.style.marginTop = "20px"; 
+NightMode.addEventListener('click', () => { 
+  document.body.style.backgroundColor = '#474747'; 
+  Container.style.backgroundColor = '#787878';
+  document.body.style.color = 'white' 
+});
+document.body.appendChild(NightMode);

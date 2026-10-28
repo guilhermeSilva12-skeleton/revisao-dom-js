@@ -9,22 +9,23 @@ const inputTexto = document.getElementById("inputTexto");
 const mensagem = document.getElementById("mensagem");
 btn2.addEventListener("click", function(){
 mensagem.innerText = "olá " + inputTexto.value + "!";
-});
+})
+
 let caixa = document.getElementById("caixa");
 caixa.addEventListener("mouseover", function(){
-    caixa.style.backgroundColor = "black";
+    caixa.style.backgroundColor = "black"
 });
 
 caixa.addEventListener("mouseout", function(){
-    caixa.style.backgroundColor = "blue";
+    caixa.style.backgroundColor = "blue"
 })
 let btn3 = document.getElementById("btn3")
 const lista = document.getElementById("lista")
 btn3.addEventListener("click", function(){
-    let novoItem = document.createElement("li");
-    novoItem.innerText = "Novo Item";
-    lista.appendChild(novoItem);
-});
+    let novoItem = document.createElement("li")
+    novoItem.innerText = "Novo Item"
+    lista.appendChild(novoItem)
+})
 
 let btn4 = document.getElementById("btn4");
 btn4.addEventListener("click", function(){
@@ -33,4 +34,10 @@ btn4.addEventListener("click", function(){
     } else {
         caixa.style.display = "none";
     }
-});
+})
+
+contadorClick = 0
+let imagem = document.getElementById("imagem");
+imagem.addEventListener("click", function(){
+    imagem.src = "imagem.jpg";
+})

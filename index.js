@@ -18,3 +18,19 @@ caixa.addEventListener("mouseover", function(){
 caixa.addEventListener("mouseout", function(){
     caixa.style.backgroundColor = "blue";
 })
+let btn3 = document.getElementById("btn3")
+const lista = document.getElementById("lista")
+btn3.addEventListener("click", function(){
+    let novoItem = document.createElement("li");
+    novoItem.innerText = "Novo Item";
+    lista.appendChild(novoItem);
+});
+
+let btn4 = document.getElementById("btn4");
+btn4.addEventListener("click", function(){
+    if(caixa.style.display === "none"){
+        caixa.style.display = "block";
+    } else {
+        caixa.style.display = "none";
+    }
+});
